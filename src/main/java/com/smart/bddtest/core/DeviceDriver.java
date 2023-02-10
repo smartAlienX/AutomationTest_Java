@@ -13,6 +13,7 @@ import io.appium.java_client.screenrecording.BaseStartScreenRecordingOptions;
 import io.appium.java_client.screenrecording.BaseStopScreenRecordingOptions;
 import io.appium.java_client.screenrecording.CanRecordScreen;
 import lombok.extern.slf4j.Slf4j;
+import lombok.val;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebElement;
@@ -63,7 +64,8 @@ public abstract class DeviceDriver {
         checkDriveStart();
         log.info("launchApp");
         if (platform == Platform.ANDROID) {
-            if (!appiumDriver.getPageSource().contains(applicationParams.getAosPackage())) {
+            String pageSource = appiumDriver.getPageSource();
+            if (pageSource == null || !pageSource.contains(applicationParams.getAosPackage())) {
                 appiumDriver.launchApp();
             }
         } else {

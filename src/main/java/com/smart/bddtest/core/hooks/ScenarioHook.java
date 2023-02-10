@@ -1,6 +1,5 @@
 package com.smart.bddtest.core.hooks;
 
-import com.smart.bddtest.business.AppDeviceDriver;
 import com.smart.bddtest.core.hooks.eventListener.AppScenarioLifeCycle;
 import io.cucumber.java.*;
 import lombok.extern.slf4j.Slf4j;

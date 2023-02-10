@@ -1,7 +1,7 @@
-applicationParams:
+application:
 
-  aosPackage:
-  aosActivity:
+  aosPackage: com.spark.uiautomationtestdemo
+  aosActivity: com.spark.uiautomationtestdemo.MainActivity
   aosAppPath:
 
   iosPackage:

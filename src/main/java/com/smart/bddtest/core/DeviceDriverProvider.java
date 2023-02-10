@@ -1,5 +1,6 @@
 package com.smart.bddtest.core;
 
+import io.appium.java_client.AppiumDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -20,4 +21,7 @@ public class DeviceDriverProvider {
         return null;
     }
 
+    public AppiumDriver getAppiumDriver() {
+        return getDeviceDriver().getAppiumDriver();
+    }
 }
