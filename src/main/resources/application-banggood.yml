@@ -1,0 +1,8 @@
+application:
+
+  aosPackage: com.banggood.client
+  aosActivity: com.banggood.client.module.home.MainActivity
+  aosAppPath:
+
+  iosPackage:
+  iosAppPath:
