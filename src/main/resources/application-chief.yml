@@ -1,0 +1,8 @@
+application:
+
+  aosPackage: com.megahub.chief.mtrader.activity
+  aosActivity: com.megahub.gui.activity.LoadingPageActivity
+  aosAppPath:
+
+  iosPackage:
+  iosAppPath:

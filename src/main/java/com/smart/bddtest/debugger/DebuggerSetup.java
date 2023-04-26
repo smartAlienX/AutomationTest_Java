@@ -12,7 +12,6 @@ public class DebuggerSetup {
     @Given("Client debug start")
     public void debugStart() {
         String deviceTime = deviceDriverProvider.getAppiumDriver().getDeviceTime();
-        System.out.println("debugStart: " + deviceTime);
     }
 
     @Given("Client debug {} start")
